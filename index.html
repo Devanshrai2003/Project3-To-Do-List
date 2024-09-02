@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="notepad">
+     <h1>To-Do-List</h1>
+     <div class="utility-bar">
+         <div class="todo-input-box">
+             <input type="text" id="todo-input">
+             <button class="add-todo" onclick="addTodo()">Add To-Do</button>
+         </div>
+         <div class="utilty-buttons">
+             <button class="utility-button" onclick="deleteFirstTodo()">Delete First To-Do</button>
+             <button class="utility-button" onclick="deleteLastTodo()">Delete Last To-Do</button>
+         </div>
+     </div>
+     <div class="todo-space">
+    </div>
+   </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

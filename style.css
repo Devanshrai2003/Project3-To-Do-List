@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+body{
+    background-color: rgb(49, 49, 49);
+}
+
+.notepad{
+    background-color: #fbff28;
+    margin: 15vh 30vh;
+    border: 20px solid black;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+.utility-bar{
+ margin: 3vh 10vh;
+}
+
+.todo-input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+#todo-input{
+    background-color: white;
+    height: 3vh;
+    width: 90vh;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.add-todo{
+    margin: 2vh;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: black;
+    border: 8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.12rem;
+}
+
+.utility-button{
+    background-color: black;
+    border: 8px solid black;
+    color: white;
+    border-radius: 10px;
+    height: 5vh;
+    width: 19vh;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.todo-space{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.todo-box{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #fdff9c;
+    border-bottom: 2px dashed black;
+    height: 5vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.del-button{
+    margin-left: 2vh;
+    margin-right: 4vh;
+    background-color: black;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    padding: 1vh;
+}
+
+.check-box{
+    margin-left: 2vh;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.text-box{
+    margin-left: 4vh;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
