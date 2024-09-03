@@ -26,6 +26,27 @@ function deleteTodo(id){
     render();
 }
 
+function editTodo(todo, textBox, todoBoxLeft){
+    let editBox = document.createElement("input");
+    editBox.value = textBox.innerHTML;
+    editBox.classList.add("edit-input")
+    todoBoxLeft.replaceChild(editBox, textBox);
+    editBox.addEventListener("blur", function(){
+        todo.title = editBox.value;
+        textBox.innerHTML = todo.title;
+        todoBoxLeft.replaceChild(textBox, editBox);
+        render();
+    }) ;
+
+    editBox.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            editBox.blur();
+        }
+    });
+
+    editBox.focus();
+}
+
 function render(){
     todoSpace.innerHTML = "";
     for(let i = 0; i < todos.length; i++){
@@ -39,11 +60,12 @@ function render(){
         let editButton = document.createElement("button");
         
         textBox.innerHTML = todo.title;
-        delButton.innerHTML = "Delete";
-        editButton.innerHTML = "Edit";
+        delButton.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+        editButton.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
         checkBox.type = "checkbox";
         todoBox.classList.add("todo-box");
-        delButton.classList.add("del-button");
+        delButton.classList.add("button");
+        editButton.classList.add("button");
         checkBox.classList.add("check-box");
         textBox.classList.add("text-box");
 
@@ -55,11 +77,14 @@ function render(){
             }
         });
 
+        editButton.addEventListener("click", () => editTodo(todo, textBox, todoBoxLeft));
+
         delButton.addEventListener("click", () => deleteTodo(todo.id));
 
         todoBoxLeft.appendChild(textBox);
         todoBoxRight.appendChild(checkBox);
         todoBoxRight.appendChild(delButton);
+        todoBoxRight.appendChild(editButton);
         todoBox.appendChild(todoBoxLeft);
         todoBox.appendChild(todoBoxRight);
 
