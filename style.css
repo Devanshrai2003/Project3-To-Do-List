@@ -72,17 +72,16 @@ h1{
 }
 
 .todo-space{
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 14vh;
+    margin-right: 14vh;
 }
 
 .todo-box{
     margin-top: 2vh;
     margin-bottom: 2vh;
-    background-color: #fdff9c;
+    background-color: #f6f86e;
     border-bottom: 2px dashed black;
     height: 5vh;
-    border-radius: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
