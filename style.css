@@ -39,6 +39,7 @@ h1{
     background-color: white;
     height: 3vh;
     width: 90vh;
+    border: 5px solid black;
     border-radius: 20px;
     text-align: center;
 }
