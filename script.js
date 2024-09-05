@@ -64,8 +64,8 @@ function render(){
         editButton.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
         checkBox.type = "checkbox";
         todoBox.classList.add("todo-box");
-        delButton.classList.add("button");
-        editButton.classList.add("button");
+        delButton.classList.add("del-button");
+        editButton.classList.add("edit-button");
         checkBox.classList.add("check-box");
         textBox.classList.add("text-box");
 
