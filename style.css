@@ -107,9 +107,10 @@ h1{
 }
 
 .edit-input{
-    width: 60vh;
+    width: 30vh;
     height: 3vh;
     border-radius: 10px;
+    color: darkslategrey;
     background-color: whitesmoke;
     border: none;
 }
